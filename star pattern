@@ -1,3 +1,39 @@
+# This code will print traingle
+x = int(input("Enter a number: "))
+for i in range(0,x):
+  print("* "*i)
+
+
+# This code will print inverted traingle
+x = int(input("Enter a number: "))
+for i in range(0,x):
+  for j in range(0,x-i):
+    print("*" , end = " ")
+  print()
+
+
+# This code will print a quardilatral of given length and breadth and also specify its type
+l = int(input("Enter Length: "))
+b = int(input("Enter breadth: "))
+for i in range(0,l):
+  for j in range(0,b):
+    print("*" , end =" ")
+  print()
+if (l==b):
+  print("This is a Sqaure.")
+else:
+  print("This is a Rectangle")
+
+
+#This code will print Rhombud star pattern according to given number
+x = int(input("Enter a number: "))
+for i in range(0,x):
+    for j in range(0,x-i):
+        print(end=" ")
+    for j in range(0,x+1):
+        print("*" , end=" ")
+    print()
+
 #This code will print daimond star pattern according to given number
 x = int(input("Enter a number: "))
 for i in range(0,x):
@@ -14,11 +50,24 @@ for i in range(0,x):
     print()
 
 
-#This code will print Rhombud star pattern according to given number
+# This code will print a ladder of number from 1 to n.
+num = 1
 x = int(input("Enter a number: "))
 for i in range(0,x):
-    for j in range(0,x-i):
-        print(end=" ")
-    for j in range(0,x+1):
-        print("*" , end=" ")
-    print()
+  num = 1
+  for j in range(0,i+1):
+    print(num , end = " ")
+    num +=1
+  print()
+
+
+# This code will print a inverted ladder of number from 1 to n.
+num = 1
+x = int(input("Enter a number: "))
+for i in range(0,x):
+  num = 1
+  for j in range(0,x-i):
+    print(num , end = " ")
+    num +=1
+  print()
+
