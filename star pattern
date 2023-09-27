@@ -34,6 +34,17 @@ for i in range(0,x):
         print("*" , end=" ")
     print()
 
+# This code will print Square with it's daigonal
+x = int(input("Enter Lenth of Square: "))
+for i in range(0,x):
+  for j in range(0,x):
+    if (i ==0 or j==0 or i==j or i ==x-1 or j==x-1 or j==x-1-i):
+      print("*" , end = " ")
+    else:
+      print(" " , end=" ")
+  print()
+
+
 #This code will print daimond star pattern according to given number
 x = int(input("Enter a number: "))
 for i in range(0,x):
