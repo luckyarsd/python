@@ -1,3 +1,4 @@
+print("Unable to print 'M' , 'W' , ' v'. We will working on it")
 alp = input("Enter a capital alphabate: ")
 def digi_aplhabate(alp):
   if alp =="A":
@@ -89,6 +90,134 @@ def digi_aplhabate(alp):
           print(" " , end=" ")
       print()
 
+  elif alp =="K":
+    for i in range(0,9):
+      for j in range(0,9):
+        if (i==j and j>4 or j==8-i and j>4 or j==4):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp == "L":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==8 or j==0):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="M":
+    print("Sorry Unable to print Working on")
+
+  elif alp =="N":
+    for i in range(0,9):
+      for j in range(0,9):
+        if (j==0 or j==8 or i==j and j<8):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="O":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0 or j==0 or i==8 or j==6):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="P":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0 or j==0 or j==6 and i<4 or i ==4):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="Q":
+    for i in range(0,10):
+      for j in range(0,7):
+        if (i ==0 or j==0 and i<8 or i==8 or j==6 and i<8):
+          print("*" , end = " ")
+        elif(i==7 and j==3 or i==9 and j==3):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="R":
+    for i in range(0,9):
+      for j in range(0,6):
+        if (i ==0 or j==0 or j==5 and i<4  or i ==4 or j==i/2 and i>4):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="S":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0 or j==0 and i<4 or i==8 or j==6 and i>4  or i ==4):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="T":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0  or j==3):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print() 
+
+  elif alp =="U":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (j==0 or i==8 or j==6):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp=="V":
+    print("Sorry Unable to print Working on")
+
+  elif alp=="W":
+    print("Sorry Unable to print Working on")
+
+  elif alp =="X":
+    for i in range(0,9):
+      for j in range(0,9):
+        if (i==j or j==8-i):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="Y":
+    for i in range(0,9):
+      for j in range(0,9):
+        if (i==j and i<4 or j==8-i):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="Z":
+    for i in range(0,9):
+      for j in range(0,9):
+        if (i ==0 or i==8 or j==8-i):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
   else:
-    print("Not available working on")
+    print("Warning: Please Enter a Capital alphabate only.")
 digi_aplhabate(alp)
