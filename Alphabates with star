@@ -1,0 +1,94 @@
+alp = input("Enter a capital alphabate: ")
+def digi_aplhabate(alp):
+  if alp =="A":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0 or j==0 or j==6 or i ==4):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp == "B":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0 or j==0 or i==8 or j==6  or i ==4):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp == "C":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0 or j==0 or i==8):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp == "D":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0 or j==2 or i==8 or j==6):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp == "E":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0 or j==0 or i==8 or i ==4):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+  elif alp =="F":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0 or j==0 or i ==4):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp == "G":
+    for i in range(0,8):
+      for j in range(0,11):
+        if (i ==0  and j<4 or i==3 and j>4 or j==0 or i==7 and j<5 or j==5 and i>2 or j==10 and i>3):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="H":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (j==0 or j==6 or i ==4):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="I":
+    for i in range(0,9):
+      for j in range(0,5):
+        if (i ==0 or j==2 or i==8):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  elif alp =="J":
+    for i in range(0,9):
+      for j in range(0,7):
+        if (i ==0 or j==3 or i==8 and j<3 or j==0 and i>5):
+          print("*" , end = " ")
+        else:
+          print(" " , end=" ")
+      print()
+
+  else:
+    print("Not available working on")
+digi_aplhabate(alp)
