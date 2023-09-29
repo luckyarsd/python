@@ -1,6 +1,5 @@
-print("Unable to print 'M' , 'W' , ' v'. We will working on it")
 alp = input("Enter a capital alphabate: ")
-def digi_aplhabate(alp):
+def star_aplhabate(alp):
   if alp =="A":
     for i in range(0,9):
       for j in range(0,7):
@@ -109,7 +108,13 @@ def digi_aplhabate(alp):
       print()
 
   elif alp =="M":
-    print("Sorry Unable to print Working on")
+    for i in range(0,9):
+      for j in range(0,10):
+        if (j==0 or i==j and i<=4 or i+j==9-1 and i<=4 or j==9):
+          print("*" , end =" ")
+        else:
+          print(" " , end =" ")
+      print()
 
   elif alp =="N":
     for i in range(0,9):
@@ -174,7 +179,7 @@ def digi_aplhabate(alp):
           print("*" , end = " ")
         else:
           print(" " , end=" ")
-      print() 
+      print()
 
   elif alp =="U":
     for i in range(0,9):
@@ -186,10 +191,22 @@ def digi_aplhabate(alp):
       print()
 
   elif alp=="V":
-    print("Sorry Unable to print Working on")
+    for i in range(0,9):
+      for j in range(0,9):
+        if (i==j and i<=4 or i+j==9-1 and i<=4 ):
+          print("*" , end = " ")
+        else:
+          print(" " , end = " ")
+      print()
 
   elif alp=="W":
-    print("Sorry Unable to print Working on")
+    for i in range(0,9):
+      for j in range(0,10):
+        if (j==0 or i+j==9-1 and i>8/2 or j==9 or i==j and i>=8/2):
+          print("*" , end = " ")
+        else:
+          print(" " , end = " ")
+      print()
 
   elif alp =="X":
     for i in range(0,9):
@@ -220,4 +237,4 @@ def digi_aplhabate(alp):
 
   else:
     print("Warning: Please Enter a Capital alphabate only.")
-digi_aplhabate(alp)
+star_aplhabate(alp)
